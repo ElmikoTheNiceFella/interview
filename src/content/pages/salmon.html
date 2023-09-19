@@ -1,0 +1,43 @@
+---
+title: 'Salmon'
+description: 'Salmon page for code interview'
+preloadImg: '/assets/images/salmon-holder.png'
+permalink: 'salmon/'
+eleventyNavigation:
+key: Salmon
+order: 600
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+  <link rel="stylesheet" href="/css/salmon.css">
+{% endblock %}
+
+{% block body %}
+
+<section class="cs-salmon-sect">
+  <div>
+    <div class="cs-salmon-picture">
+        <img aria-hidden="true" decoding="async" src="/assets/images/salmon-holder-bg.png" alt="salmon holder picture" loading="eager"
+          >
+        <img aria-hidden="true" decoding="async" src="/assets/images/salmon-holder.png" alt="salmon picture"
+          loading="eager">
+    </div>
+  </div>
+  <div class="cs-salmon-info">
+    <p id="cs-overview">Overview</p>
+    <h1>Salmon<br/>
+    Guide <span class="cs-green">Service</span></h1>
+    <p>Welcome to Salmon Fishing Guide, your ultimate gateway to an exhilarating world of angling excitement. Embark on a
+    journey where the shimmering waters of pristine rivers and the challenge of the wild collide, offering you the chance to
+    reel in the ultimate catch – the majestic salmon.</p>
+    <ul>
+      <li>Join our seasoned guides who are not only passionate about salmon fishing</li>
+      <li>Immerse yourself in the tranquility of unspoiled rivers and breathtaking landscapes</li>
+      <li>Whether you're a novice or a seasoned angler, our guides tailor each expedition to match your skill level</li>
+    </ul>
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,73 @@
+@import url("https://fonts.cdnfonts.com/css/made-soulmaze");
+@import url("https://fonts.cdnfonts.com/css/quicksand");
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+// Fonts
+$soulmaze: "MADE Soulmaze", sans-serif;
+$quicksand: "Quicksand", sans-serif;
+
+// Colors
+$green: #049a4b;
+$black: #25082d;
+$blue: #145fa4;
+
+.cs-salmon-sect {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 5rem;
+}
+.cs-salmon-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  :nth-child(1) {
+    margin-top: 50px;
+    padding: 35px;
+    background-color: #ebebeb;
+    @include border-radius(1rem);
+  }
+  :nth-child(2) {
+    position: absolute;
+    margin-left: 140px;
+  }
+}
+.cs-salmon-info {
+  margin-top: 4rem;
+  p#cs-overview {
+    color: #049a4b;
+    font-family: $quicksand;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  h1 {
+    font-family: $soulmaze;
+    color: $black;
+    font-size: 52px;
+  }
+  p:not(#cs-overview),
+  ul > li {
+    color: #3a3a3a;
+    font-family: $quicksand;
+    font-size: 18px;
+    line-height: 30px;
+    width: 516px;
+  }
+  ul > li {
+    list-style: none;
+  }
+  ul > li::before {
+  }
+}
+.cs-green {
+  color: $green;
+}
